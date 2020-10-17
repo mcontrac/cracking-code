@@ -10,7 +10,7 @@ public class IsUniqueTest {
     IsUnique uniqueTest = new IsUnique();
 
     @Test
-    @DisplayName("Test Unique Srting")
+    @DisplayName("Test Unique String")
     public void isUniqueCharTest1(){
         Assert.assertEquals(true,
             uniqueTest.isUniqueChars("abcdefg"));
@@ -21,6 +21,20 @@ public class IsUniqueTest {
     public void isUniqueCharTest2(){
         Assert.assertEquals(false,
                 uniqueTest.isUniqueChars("abcdeabd"));
+    }
+
+    @Test
+    @DisplayName("Test Unique String with optimization")
+    public void isUniqueCharOptimizationTest1(){
+        Assert.assertEquals(true,
+                uniqueTest.isUniqueCharsOptimize("abcdefg"));
+    }
+
+    @Test
+    @DisplayName("Test non Unique String with optimization")
+    public void isUniqueCharOptimizationTest2(){
+        Assert.assertEquals(false,
+                uniqueTest.isUniqueCharsOptimize("abcdeabd"));
     }
 
 }

@@ -13,7 +13,7 @@ public class IsUniqueTest {
     @DisplayName("Test Unique String")
     public void isUniqueCharTest1(){
         Assert.assertEquals(true,
-            uniqueTest.isUniqueChars("abcdefg"));
+            uniqueTest.isUniqueChars("abcdefgA"));
     }
 
     @Test

@@ -1,6 +1,10 @@
 package cci.com.arrays;
 
-
+/**
+ * this class has been written to improve my programming habits in Java
+ * @Author Milind Contractor
+ * @version 1.0
+ */
 public class IsUnique {
 
     // Brut force way to implement the Unique set of char in String.
@@ -21,6 +25,12 @@ public class IsUnique {
         return true;
     }
 
+    /**
+     * There is an assumption that string is always lower cast char
+     * this function returns all the chars are unique or not.
+     * @param str any lower case string
+     * @return bool return all the chars in string is unique or not.
+    */
     public boolean isUniqueCharsOptimize(String str){
         int checker = 0;
         for(int i = 0; i < str.length(); i++){

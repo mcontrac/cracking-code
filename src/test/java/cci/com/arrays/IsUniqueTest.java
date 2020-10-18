@@ -37,4 +37,11 @@ public class IsUniqueTest {
                 uniqueTest.isUniqueCharsOptimize("abcdeabd"));
     }
 
+    @Test
+    @DisplayName("Test Unique String with Capital letter with optimization")
+    public void isUniqueCharOptimizationTest3() {
+        Assert.assertEquals(false,
+                uniqueTest.isUniqueCharsOptimize("abcdefgA"));
+    }
+
 }
